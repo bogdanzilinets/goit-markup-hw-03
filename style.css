@@ -5,7 +5,24 @@ span {
   color: #2196f3;
 }
 
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+/* reset end */
+
 /* header */
+
+.container {
+  width: 1200px;
+}
 
 .logo-first {
   font-family: "Raleway";
@@ -14,8 +31,19 @@ span {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
+  margin-left: 215px;
+  margin-right: 93px;
   color: #000000;
   text-decoration: none;
+}
+
+.container-header{
+ display: flex;
+ align-items: center;
+}
+
+.second-f {
+  margin-right: auto;
 }
 
 .menu-list {
@@ -31,6 +59,11 @@ span {
 }
 
 .menu-general {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  gap: 50px; 
   list-style: none;
 }
 
@@ -63,18 +96,34 @@ span {
   line-height: calc(16 / 14);
   text-decoration: none;
   letter-spacing: 0.02em;
+
   color: #757575;
 }
 
 .telephone-header:hover {
   color: #2196f3;
 }
+
+.header-group {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 50px;
+}
+
+
 /* header */
 
-.main {
+.section-f {
+  display: flex;
+  align-items: center;
+}
+
+.main-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 900;
+  width: 1200px;
+  height: 600px;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
@@ -89,6 +138,19 @@ span {
   background-color: #2196f3;
 }
 
+/* explain */
+.text-flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-f {
+  display: flex;
+  margin-top: 94px;
+  align-items: flex-start
+}
+ 
+
 .text {
   list-style: none;
 }
@@ -102,6 +164,11 @@ span {
   color: #212121;
 }
 
+.title-flex {
+  padding-right: 30px;
+  
+}
+
 .explain {
   font-weight: 400;
   font-size: 14px;
@@ -110,6 +177,11 @@ span {
   list-style: none;
   color: #757575;
 }
+
+.explain-flex {
+padding-bottom: 10px;
+}
+/* explain */
 
 /* Three pictures */
 
@@ -122,14 +194,31 @@ span {
 
   color: #212121;
 }
+.title-center {
+  display: flex;
+align-items: center;
+display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
 
 .three-pictures {
+  display: flex;
   list-style: none;
+}
+
+.three-pictures-flex {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
 }
 /* Three pictures */
 
 /* our team */
 .our-team-title {
+    background: #f5f5f5;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -138,9 +227,24 @@ span {
   color: #212121;
 }
 
+.div-flex {
+  display: flex;
+margin-top: 94px;
+}
+  
+
+.list-flex {
+  display: flex;
+}
+
+.li-flex {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
 .our-team-list {
   background: #f5f5f5;
-
   list-style: none;
 }
 
