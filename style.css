@@ -24,6 +24,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 .logo-first {
@@ -33,8 +34,8 @@ ul {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  margin-left: 215px;
-  margin-right: 93px;
+  padding-left: 215px;
+  padding-right: 93px;
   color: #000000;
   text-decoration: none;
 }
@@ -43,8 +44,6 @@ ul {
  display: flex;
  align-items: center;
 height: 80px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .second-f {
@@ -118,27 +117,47 @@ height: 80px;
 /* header */
 
 /* hero */
-.section-f {
-  display: flex;
-  align-items: center;
- 
+.main-hero {
+  width: 1200px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  background-color: #2f303a;
 }
 
+.flex-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .main-title {
   font-family: "Roboto";
   font-style: normal;
-  height: 600px;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
-  padding-top: 200px;
   text-transform: uppercase;
   background-color: #2f303a;
   color: #ffffff;
 }
 
 .btn-first {
+  align-items: center;
+  padding: 10 32px;
+  min-width: 216px;
+  min-height: 50px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30/16);
+  text-align: center;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 30px;
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -146,19 +165,19 @@ height: 80px;
 
 /* explain */
 .text-flex {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .text-f {
   display: flex;
-  margin-top: 94px;
-  align-items: flex-start
+  padding-top: 94px;
+  gap: 30px;
+ 
 }
  
-
 .text {
   list-style: none;
 }
@@ -173,6 +192,7 @@ height: 80px;
 }
 
 .title-flex {
+  margin-bottom: 10px;
   padding-right: 30px;
   
 }
@@ -180,15 +200,13 @@ height: 80px;
 .explain {
   font-weight: 400;
   font-size: 14px;
+  width: 270px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   list-style: none;
   color: #757575;
 }
 
-.explain-flex {
-padding-bottom: 10px;
-}
 /* explain */
 
 /* Three pictures */
@@ -213,9 +231,8 @@ padding-bottom: 10px;
 .three-pictures-flex {
   display: flex;
   flex-direction: column;
-  margin-top: 94px;
+  padding-top: 94px;
   gap: 30px;
-  padding-left: 0;
 }
 /* Three pictures */
 
@@ -268,25 +285,30 @@ padding-bottom: 10px;
   gap: 30px;
 }
 
+.team-four {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* our team */
 
 /* footer */
+.futurum {
+  width: 1200px;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .geocontakts {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
+  padding-top: 20px;
   background-color: #2f303a;
 }
 span {
   color: #2196f3;
-}
-.container-footer {
-  display: flex;
-  flex-direction: column;
-  height: 268px;
-  padding-top: 60px;
-  background-color: #2f303a;
 }
 
 .logo-second {
@@ -388,7 +410,7 @@ span {
 }
 
 .telephone-portfolio {
-  font-family: "Roboto";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -416,7 +438,7 @@ span {
 
 /* button-five */
 .big-flex {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .name-btn {
@@ -426,9 +448,17 @@ span {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
+  padding: 6 25px;
+  min-width: 73px;
+  min-height: 38px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
   letter-spacing: 0.03em;
   color: #212121;
 }
+
+
 .name-btn:hover,
 .name-btn:focus {
   background-color: #2196f3;
@@ -438,6 +468,7 @@ span {
   display: flex;
   text-align: center;
   flex-direction: column;
+  padding-bottom: 30px;
   gap: 8px;
 }
 
@@ -461,8 +492,7 @@ span {
 
 .all-nine {
   display: flex;
-padding-top: 34px;
-margin-bottom: 30px;
+  margin-bottom: 94px;
 }
 
 
@@ -470,8 +500,6 @@ margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 
@@ -484,6 +512,7 @@ margin-bottom: 30px;
 }
 
 .down-padding {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 /* main image */
