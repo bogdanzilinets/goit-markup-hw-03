@@ -15,6 +15,7 @@ h6,
 p,
 ul {
   margin: 0;
+  padding-left: 0;
 }
 /* reset end */
 
@@ -34,8 +35,8 @@ ul {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  padding-left: 215px;
   padding-right: 93px;
+  margin-left: 93px;
   color: #000000;
   text-decoration: none;
 }
@@ -43,7 +44,9 @@ ul {
 .container-header{
  display: flex;
  align-items: center;
-height: 80px;
+ height: 80px;
+ padding-top: 32px;
+ padding-bottom: 32px;
 }
 
 .second-f {
@@ -64,8 +67,7 @@ height: 80px;
 
 .menu-general {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 0px;
   align-items: center;
   gap: 50px; 
   list-style: none;
@@ -118,7 +120,6 @@ height: 80px;
 
 /* hero */
 .main-hero {
-  width: 1200px;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -134,8 +135,10 @@ height: 80px;
 .main-title {
   font-family: "Roboto";
   font-style: normal;
+  font-weight: 900px;
+  width: 696px;
   font-size: 44px;
-  line-height: 60px;
+  line-height: calc(60/44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -165,15 +168,15 @@ height: 80px;
 
 /* explain */
 .text-flex {
-    display: flex;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .text-f {
   display: flex;
-  padding-top: 94px;
   gap: 30px;
  
 }
@@ -184,6 +187,7 @@ height: 80px;
 .title {
   font-weight: 700;
   font-size: 14px;
+  padding-bottom: 10px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -216,6 +220,7 @@ height: 80px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+  margin-bottom: 50px;
   letter-spacing: 0.03em;
 
   color: #212121;
@@ -223,7 +228,6 @@ height: 80px;
 
 .three-pictures {
   display: flex;
-  padding-top: 50px;
   list-style: none;
   gap: 30px;
 }
@@ -243,6 +247,7 @@ height: 80px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+  padding-top: 94px;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -257,8 +262,8 @@ height: 80px;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  padding-top: 30px;
   text-align: center;
+  margin-bottom: 10px;
   color: #212121;
 }
 
@@ -275,13 +280,17 @@ height: 80px;
 .our-team-flex {
   display: flex;
   flex-direction: column;
-  padding-top: 94px;
+ 
 }
+.team-our {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 
 .team-flex {
   display: flex;
   padding-top: 50px;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -294,7 +303,6 @@ height: 80px;
 
 /* footer */
 .futurum {
-  width: 1200px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -364,7 +372,7 @@ span {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
@@ -378,6 +386,10 @@ span {
 
 /* portfolio */
 /* header */
+.line {
+border-bottom:1px solid #000000;
+}
+
 .menu-list-port {
   font-family: "Roboto";
   font-style: normal;
@@ -387,6 +399,7 @@ span {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
+  
 }
 
 .menu-list-port:hover,
@@ -410,14 +423,14 @@ span {
 }
 
 .telephone-portfolio {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .telephone-portfolio:hover {
@@ -467,9 +480,10 @@ span {
 .btn-five {
   display: flex;
   text-align: center;
-  flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  justify-content: center;
   gap: 8px;
+  list-style: none;
 }
 
 /* button-five */
@@ -499,7 +513,7 @@ span {
 .another-nine {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 
@@ -512,7 +526,9 @@ span {
 }
 
 .down-padding {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /* main image */
